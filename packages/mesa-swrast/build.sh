@@ -17,7 +17,7 @@ TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 -Degl=disabled
 -Dgles1=disabled
 -Dgles2=disabled
--Dcmake_module_path=${TERMUX_PREFIX}
+--cross-file "${TERMUX_PKG_BUILDER_DIR}/cross-llvm.ini"
 -Dshared-llvm=false
 -Dlmsensors=disabled
 -Dvalgrind=disabled
