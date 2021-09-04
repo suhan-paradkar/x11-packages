@@ -17,6 +17,7 @@ TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 -Degl=disabled
 -Dgles1=disabled
 -Dgles2=disabled
+-Dcmake_module_path=${TERMUX_PREFIX}
 -Dshared-llvm=false
 -Dlmsensors=disabled
 -Dvalgrind=disabled
