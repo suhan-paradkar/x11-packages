@@ -13,11 +13,11 @@ TERMUX_PKG_REPLACES="libmesa"
 TERMUX_PKG_RM_AFTER_INSTALL="include/KHR/khrplatform.h"
 
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
---prefix=$TERMUX_PREFIX
 -Dgbm=disabled
 -Degl=disabled
 -Dgles1=disabled
 -Dgles2=disabled
+-Dcmake_module_path=${TERMUX_PREFIX}
 -Dlmsensors=disabled
 -Dvalgrind=disabled
 -Dllvm=enabled
