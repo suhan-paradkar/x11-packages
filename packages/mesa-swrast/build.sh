@@ -14,7 +14,7 @@ TERMUX_PKG_RM_AFTER_INSTALL="include/KHR/khrplatform.h"
 
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 --prefix=$TERMUX_PREFIX
--Dgbm=enabled
+-Dgbm=disabled
 -Degl=disabled
 -Dgles1=disabled
 -Dgles2=disabled
