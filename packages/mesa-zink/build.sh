@@ -34,7 +34,7 @@ TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 "
 
 termux_step_pre_configure() {
-	export LDFLAGS+=" -L${TERMUX_PREFIX}/lib -landroid-shmem -latomic -llog -lXxf86vm -lXext -lX11 "
+	export LDFLAGS+=" -landroid-shmem -latomic -llog -lXxf86vm -lXext -lX11 "
 }
 
 termux_step_post_massage() {
