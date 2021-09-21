@@ -4,19 +4,13 @@ TERMUX_PKG_LICENSE="MIT"
 TERMUX_PKG_MAINTAINER="DLC01"
 TERMUX_PKG_VERSION=21.2.0
 TERMUX_PKG_SRCURL=https://github.com/mesa3d/mesa.git
-TERMUX_PKG_GIT_BRANCH=main
 _COMMIT=b8970120545b3cb250821013cb459bf4d2acfda4
+TERMUX_PKG_GIT_BRANCH=${_COMMIT}
 TERMUX_PKG_DEPENDS="libandroid-shmem-static, libc++, libdrm, libexpat, bison, flex, vulkan-headers"
 TERMUX_PKG_BUILD_DEPENDS="xorgproto, vulkan-loader-android"
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 -Dgallium-drivers=zink
 "
-
-termux_step_post_get_source() {
-	git pull
-        git reset --hard ${_COMMIT}
-}
-
 termux_step_pre_configure() {
     export LDFLAGS=" -L${TERMUX_PREFIX}/lib -latomic -llog"
 }
