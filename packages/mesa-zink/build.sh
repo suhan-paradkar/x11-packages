@@ -7,8 +7,6 @@ _COMMIT=b8970120545b3cb250821013cb459bf4d2acfda4
 TERMUX_PKG_DEPENDS="libandroid-shmem-static, libc++, libdrm, libexpat, bison, flex, vulkan-headers"
 TERMUX_PKG_BUILD_DEPENDS="xorgproto, vulkan-loader-android"
 TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
--Dc_args="-Wno-error=incompatible-function-pointer-types  \
--Wno-error=implicit-function-declaration"
 -Dgallium-drivers=zink
 "
 
