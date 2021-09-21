@@ -4,6 +4,7 @@ TERMUX_PKG_LICENSE="MIT"
 TERMUX_PKG_MAINTAINER="DLC01"
 TERMUX_PKG_VERSION=21.2.0
 TERMUX_PKG_SRCURL=https://github.com/mesa3d/mesa.git
+TERMUX_PKG_GIT_BRANCH=main
 _COMMIT=b8970120545b3cb250821013cb459bf4d2acfda4
 TERMUX_PKG_DEPENDS="libandroid-shmem-static, libc++, libdrm, libexpat, bison, flex, vulkan-headers"
 TERMUX_PKG_BUILD_DEPENDS="xorgproto, vulkan-loader-android"
