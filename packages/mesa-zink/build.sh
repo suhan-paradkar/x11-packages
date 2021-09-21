@@ -1,5 +1,6 @@
 TERMUX_PKG_HOMEPAGE=https://www.mesa3d.org
 TERMUX_PKG_DESCRIPTION="Mesa opengl library"
+TERMUX_PKG_LICENSE="MIT"
 TERMUX_PKG_MAINTAINER="DLC01"
 TERMUX_PKG_VERSION=21.2.0
 TERMUX_PKG_SRCURL=https://github.com/mesa3d/mesa.git
